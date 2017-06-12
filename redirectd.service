@@ -1,0 +1,11 @@
+[Unit]
+Description=redirectd
+
+[Service]
+Restart=on-failure
+EnvironmentFile=-/etc/default/redirectd
+ExecStart=/usr/bin/redirectd
+
+[Install]
+WantedBy=multi-user.target
+
