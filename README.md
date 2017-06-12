@@ -1,10 +1,10 @@
 
 If you want to run a web server on HTTPS, you probably also want to run another
-web service on HTTP to redirect connections over to your HTTPS server.  Installing a 
+web service on HTTP to redirect connections over to your HTTPS server.  Installing a
 heavyweight server on port 80 just to do redirects can seem like overkill.  
 
-The included program, redirectd, tries to fill this gap.  All it does is redirects, 
-nothing else.  Any HTTP request, regardless of the method, to the service will 
+The included program, redirectd, tries to fill this gap.  All it does is redirects,
+nothing else.  Any HTTP request, regardless of the method, to the service will
 result in a 301 redirection to HTTPS.  All connections are logged to standard output.
 
 For example a GET request to the service listening on say example.com on port 8000
@@ -24,7 +24,7 @@ The url path is preserved.  However all query strings are stripped.
 The port the serivce listens on port 80 by default but this can be changed using the -p option.
 The service attempts to find the fully qualified hostname of the current machine
 using /etc/hosts.  If it determines wrong or if the service needs to redirect the
-connection to another host, this can be changed using the -H option.  The -v option 
+connection to another host, this can be changed using the -H option.  The -v option
 tells the linked libmicrohttpd library to turn on debugging mode.  So if the service 
 does not run try it again but with -v.
 
