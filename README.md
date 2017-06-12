@@ -28,8 +28,8 @@ connection to another host, this can be changed using the -H option.  The -v opt
 tells the linked libmicrohttpd library to turn on debugging mode.  So if the service 
 does not run try it again but with -v.
 
-The install.sh script will compile the redirectd serivce as well as install it 
-in /usr/bin.  The provided systemd file redirectd.service will also be installed 
+The install.sh script will compile the redirectd serivce as well as install it
+in /usr/bin.  The provided systemd file redirectd.service will also be installed
 and enabled.  The code requires the library libmicrohttpd to be installed.
 
 Benchmarking with "ab" using localhost gives the following numbers:
