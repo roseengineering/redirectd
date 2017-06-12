@@ -21,7 +21,7 @@ Date: Mon, 12 Jun 2017 00:40:19 GMT
 
 The url path is preserved.  However all query strings are stripped.
 
-The port the serivce listens on by default 80 but can be changed using the -p option.
+The port the serivce listens on port 80 by default but this can be changed using the -p option.
 The service attempts to find the fully qualified hostname of the current machine
 using /etc/hosts.  If it determines wrong or if the service needs to redirect the
 connection to another host, this can be changed using the -H option.  The -v option 
