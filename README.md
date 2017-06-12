@@ -32,7 +32,7 @@ The install.sh script will compile the redirectd serivce as well as install it
 in /usr/bin.  The provided systemd file redirectd.service will also be installed 
 and enabled.  The code requires the library libmicrohttpd to be installed.
 
-Benchmarking with "ab" using localhost gives the numbers:
+Benchmarking with "ab" using localhost gives the following numbers:
 
 ```
 $ ab -c 100 -n 100000 http://localhost:8000/path/to
